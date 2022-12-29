@@ -1,7 +1,7 @@
 # Rishisingla.me
 Personal Website
 
-<!DOCTYPE html>
+<!--DOCTYPE html-->
 <html>
   <head>
     <title> </title>
