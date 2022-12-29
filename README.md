@@ -2,10 +2,7 @@
 <html>
   <head>
     <title> Personal Website </title>
-    <link
-          href='style.css'
-          rel='stylesheet'
-          >
+    <link href='style.css' rel='stylesheet' >
   </head>
   
   <body>
