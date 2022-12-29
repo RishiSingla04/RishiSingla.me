@@ -1,10 +1,7 @@
-# Rishisingla.me
-Personal Website
-
 <!--DOCTYPE html-->
 <html>
   <head>
-    <title> </title>
+    <title> Personal Website </title>
     <link
           href='style.css'
           rel='stylesheet'
