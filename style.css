@@ -8,4 +8,5 @@
 /*-- Pictures --*/
 .selfie{
   width: 300px;
+  border-radius: 50%;
 }
