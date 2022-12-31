@@ -1,5 +1,12 @@
-
+/*-- Texts: Home Page --*/
 
 .fluent-gradient-heading{
   color: blue;
+}
+
+
+/*-- Pictures --*/
+.selfie{
+  width: auto;
+  length: auto;
 }
