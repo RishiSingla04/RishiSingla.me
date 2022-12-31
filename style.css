@@ -6,7 +6,14 @@
 
 
 /*-- Pictures --*/
+
+.icon{
+  border-radius: 50%;
+}
+
+
 .selfie{
   width: 300px;
   border-radius: 50%;
 }
+
