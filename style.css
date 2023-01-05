@@ -1,7 +1,11 @@
 /*-- Texts: Home Page --*/
 
-.fluent-gradient-heading{
+.intro{
   color: blue;
+}
+
+.info{
+  font-size: 1.25em;
 }
 
 
