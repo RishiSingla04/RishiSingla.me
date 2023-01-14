@@ -3451,7 +3451,7 @@ input[type="button"].btn--primary:focus {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    opacity: 0.1;
+    background-opacity: 0.1;
 }
 
 .s-hero__bg::before {
