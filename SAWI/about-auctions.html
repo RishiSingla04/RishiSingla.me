@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+  <!--<![endif]-->
+
+  <head>
+    <!-- Based on CDTS 4.1.0 (https://cenw-wscoe.github.io/sgdc-cdts/docs/index-en.html) with DECoE customizations added (look for "DECoE customization" in comments) -->
+    <meta charset="utf-8" />
+
+    <!-- Start DECoE customization -->
+    <title>About spectrum auctions</title>
+    <!-- End DECoE customization -->
+
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/cdts/compiled/soyutils.js"></script>
+    <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      <!-- refTop.html -->
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      document.write(
+        wet.builder.refTop({
+          cdnEnv: "esdcprod",
+        })
+      );
+    </script>
+
+    <!-- Start DECoE customization -->
+
+    <style>
+      /* Styles for this mockup */
+      #dataset-filter1_wrapper table {
+        margin-top: 1em;
+        border-top: 1px solid #111;
+      }
+
+      .nowrap {
+        white-space: nowrap;
+      }
+    </style>
+    <!-- End DECoE customization -->
+  </head>
+
+  <header>
+    <div id="wb-bnr" class="container">
+      <div class="row">
+        <section id="wb-lng" class="col-xs-3 col-sm-12 pull-right text-right">
+          <h2 class="wb-inv">Language selection</h2>
+          <ul class="list-inline mrgn-bttm-0">
+            <li>
+              <a lang="fr" hreflang="fr" href="?">
+                <span class="hidden-xs" translate="no" id="lang-toggle"
+                  >Français</span
+                >
+                <abbr
+                  title="Français"
+                  translate="no"
+                  class="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase"
+                  >fr</abbr
+                >
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <div
+          class="brand col-xs-9 col-sm-5 col-md-4"
+          property="publisher"
+          typeof="GovernmentOrganization"
+        >
+          <a href="#" property="url">
+            <img
+              src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/sig-blk-en.svg"
+              alt="Government of Canada"
+              property="logo"
+            /><span class="wb-inv">
+              / <span lang="fr">Gouvernement du Canada</span></span
+            >
+          </a>
+          <meta property="name" content="Government of Canada" />
+          <meta property="areaServed" typeof="Country" content="Canada" />
+          <link
+            property="logo"
+            href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg"
+          />
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <nav id="wb-bc" property="breadcrumb">
+            <h2>You are here:</h2>
+            <div class="container">
+              <ol class="breadcrumb" typeof="BreadcrumbList">
+                <li property="itemListElement" typeof="ListItem">
+                  <a
+                    property="item"
+                    typeof="WebPage"
+                    href="#"
+                    style="font-size: 16px"
+                  >
+                    <span property="name">Canada.ca</span>
+                  </a>
+                  <meta property="position" content="1" />
+                </li>
+                <li property="itemListElement" typeof="ListItem">
+                  <a
+                    property="item"
+                    typeof="WebPage"
+                    href="#"
+                    style="font-size: 16px"
+                  >
+                    <span property="name" data-i18n="smt"></span>
+                  </a>
+                  <meta property="position" content="2" />
+                </li>
+                <li property="itemListElement" typeof="ListItem">
+                  <a
+                    property="item"
+                    typeof="WebPage"
+                    href="#"
+                    style="font-size: 16px"
+                  >
+                    <span
+                      property="name"
+                      data-i18n="spectrum-allocation"
+                    ></span>
+                  </a>
+                  <meta property="position" content="3" />
+                </li>
+                <li property="itemListElement" typeof="ListItem">
+                  <a
+                    property="item"
+                    typeof="WebPage"
+                    href="/SAWI/auction-landing-page.html"
+                    style="font-size: 16px"
+                  >
+                    <span property="name" data-i18n="spectrum-auctions"></span>
+                  </a>
+                  <meta property="position" content="4" />
+                </li>
+              </ol>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <!-- transactTop-en.html -->
+    </div>
+    <!-- Write closure template -->
+
+    <main
+      property="mainContentOfPage"
+      typeof="WebPageElement"
+      class="container"
+    >
+      <!-- Start page content -->
+      <h1 property="name" data-i18n="about-title"></h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <p data-i18n="about-intro"></p>
+
+          <h3 data-i18n="table-of-contents"></h3>
+
+          <ul>
+            <li>
+              <a href="#general-process" data-i18n="about-table-item1"></a>
+            </li>
+            <!-- <li><a href="#auction-types">Auction types</a></li> -->
+            <li>
+              <a href="#auction-formats" data-i18n="about-table-item2"></a>
+            </li>
+            <li>
+              <a href="#frameworks-outlooks" data-i18n="about-table-item3"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <img
+            id="about-auctions-image"
+            alt=""
+            class="img-responsive"
+            src="imgs/How_Auctions_Work_03.jpg"
+          />
+        </div>
+      </div>
+
+      <section class="well well-lg" style="margin-top: 5%" id="general-process">
+        <h2 style="margin-top: 0%" data-i18n="about-auctions-process"></h2>
+
+        <p data-i18n="about-auctions-process-intro"></p>
+
+        <p data-i18n="about-auctions-process-intro-continued"></p>
+
+        <div class="wb-tabs ignore-session">
+          <div class="tabpanels">
+            <details id="details-panel10" style="background-color: #ffffff">
+              <summary data-i18n="about-auctions-tab1"></summary>
+              <p data-i18n="about-auctions-tab1-description"></p>
+              <h3 data-i18n="about-auctions-step1"></h3>
+              <p data-i18n="about-auctions-step1-description"></p>
+
+              <h3 data-i18n="about-auctions-step2"></h3>
+              <p data-i18n="about-auctions-step2-description"></p>
+
+              <h3 data-i18n="about-auctions-step3"></h3>
+              <p data-i18n="about-auctions-step3-description"></p>
+
+              <h3 data-i18n="about-auctions-step4"></h3>
+              <p data-i18n="about-auctions-step4-description"></p>
+
+              <h3 data-i18n="about-auctions-step5"></h3>
+              <p data-i18n="about-auctions-step5-description"></p>
+
+              <h3 data-i18n="about-auctions-step6"></h3>
+              <p data-i18n="about-auctions-step6-description"></p>
+
+              <h3 data-i18n="about-auctions-step7"></h3>
+              <p data-i18n="about-auctions-step7-description"></p>
+
+              <h3 data-i18n="about-auctions-step8"></h3>
+              <p data-i18n="about-auctions-step8-description"></p>
+
+              <h3 data-i18n="about-auctions-step9"></h3>
+              <p data-i18n="about-auctions-step9-description"></p>
+
+              <h3 data-i18n="about-auctions-step10"></h3>
+              <p data-i18n="about-auctions-step10-description"></p>
+
+              <h3 data-i18n="about-auctions-step11"></h3>
+              <p data-i18n="about-auctions-step11-description"></p>
+
+              <h3 data-i18n="about-auctions-step12"></h3>
+              <p data-i18n="about-auctions-step12-description"></p>
+
+              <h3 data-i18n="about-auctions-step13"></h3>
+              <p data-i18n="about-auctions-step13-description"></p>
+
+              <h3 data-i18n="about-auctions-step14"></h3>
+              <p data-i18n="about-auctions-step14-description"></p>
+
+              <h3 data-i18n="about-auctions-step15"></h3>
+              <p data-i18n="about-auctions-step15-description"></p>
+              <h3 data-i18n="about-auctions-step16"></h3>
+              <p data-i18n="about-auctions-step16-description"></p>
+            </details>
+
+            <details id="details-panel20" style="background-color: #ffffff">
+              <summary data-i18n="about-auctions-tab2"></summary>
+              <p data-i18n="about-auctions-tab2-description"></p>
+              <p data-i18n="about-auctions-tab2-description-continued"></p>
+
+              <h3 data-i18n="about-residual-auctions-step1"></h3>
+              <p data-i18n="about-residual-auctions-step1-description"></p>
+
+              <h3 data-i18n="about-residual-auctions-step2"></h3>
+              <p data-i18n="about-residual-auctions-step2-description"></p>
+
+              <h3 data-i18n="about-residual-auctions-step3"></h3>
+              <p data-i18n="about-residual-auctions-step3-description"></p>
+
+              <h3 data-i18n="about-residual-auctions-step4"></h3>
+              <p data-i18n="about-residual-auctions-step4-description"></p>
+
+              <h3 data-i18n="about-residual-auctions-step5"></h3>
+              <p data-i18n="about-residual-auctions-step5-description"></p>
+
+              <h3 data-i18n="about-residual-auctions-step6"></h3>
+              <p data-i18n="about-residual-auctions-step6-description"></p>
+
+              <h3 data-i18n="about-residual-auctions-step7"></h3>
+              <p data-i18n="about-residual-auctions-step7-description"></p>
+
+              <h3 data-i18n="about-residual-auctions-step8"></h3>
+              <p data-i18n="about-residual-auctions-step8-description"></p>
+
+              <h3 data-i18n="about-residual-auctions-step9"></h3>
+              <p data-i18n="about-residual-auctions-step9-description"></p>
+
+              <h3 data-i18n="about-residual-auctions-step10"></h3>
+              <p data-i18n="about-residual-auctions-step10-description"></p>
+
+              <h3 data-i18n="about-residual-auctions-step11"></h3>
+              <p data-i18n="about-residual-auctions-step11-description"></p>
+
+              <h3 data-i18n="about-residual-auctions-step12"></h3>
+              <p data-i18n="about-residual-auctions-step12-description"></p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- <div class="col-md-12">
+        <section class="gc-features" id="auction-types">
+          <h2>Auction types</h2>
+          <div class="row wb-eqht-grd">
+            <div class="col-sm-4 hght-inhrt">
+              <div class="eqht-trgt hght-inhrt wb-init wb-eqht-grd-inited">
+                <h3>
+                  <a href="/auction.html">Auctions</a>
+                </h3>
+                <p>
+                  Auctions are also called major auctions, internet-based
+                  auctions or band auctions. Learn more about auctions and its
+                  process.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-sm-4 hght-inhrt">
+              <div class="eqht-trgt hght-inhrt wb-init wb-eqht-grd-inited">
+                <h3>
+                  <a href="/auction-residual.html">Residual auctions</a>
+                </h3>
+                <p>
+                  Residual auctions are auctions of licences that remain
+                  unallocated or have been returned. Learn more about residual
+                  auctions and its process.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div> -->
+
+      <div class="col-md-12">
+        <section class="gc-features" id="auction-formats">
+          <h2 data-i18n="about-auctions-formats-heading"></h2>
+
+          <details>
+            <summary><h3 data-i18n="about-auctions-formats-tab1"></h3></summary>
+            <p data-i18n="about-auctions-formats-tab1-description"></p>
+          </details>
+          <details>
+            <summary>
+              <h3 data-i18n="about-auctions-formats-tab2"></h3>
+            </summary>
+            <p data-i18n="about-auctions-formats-tab2-description"></p>
+          </details>
+
+          <details>
+            <summary>
+              <h3 data-i18n="about-auctions-formats-tab3"></h3>
+            </summary>
+
+            <p data-i18n="about-auctions-formats-tab3-description"></p>
+          </details>
+
+          <details>
+            <summary>
+              <h3 data-i18n="about-auctions-formats-tab4"></h3>
+            </summary>
+            <p data-i18n="about-auctions-formats-tab4-description"></p>
+          </details>
+        </section>
+      </div>
+
+      <section class="col-md-12" id="frameworks-outlooks">
+        <h2 data-i18n="about-auctions-frameworks-heading"></h2>
+        <div class="row wb-init">
+          <div class="col-md-6" style="vertical-align: top; min-height: 139px">
+            <section class="gc-drmt">
+              <h3 class="h5">
+                <a
+                  href="#"
+                  class="wrong-way"
+                  data-i18n="about-auctions-frameworks-link1"
+                ></a>
+              </h3>
+              <p data-i18n="about-auctions-frameworks-link1-description"></p>
+            </section>
+          </div>
+          <div class="col-md-6" style="vertical-align: top; min-height: 139px">
+            <section class="gc-drmt">
+              <h3 class="h5">
+                <a
+                  href="#"
+                  class="wrong-way"
+                  data-i18n="about-auctions-frameworks-link2"
+                >
+                </a>
+              </h3>
+              <p data-i18n="about-auctions-frameworks-link2-description"></p>
+            </section>
+          </div>
+        </div>
+        <!-- <div class="row wb-init">
+          <div class="col-md-6" style="vertical-align: top; min-height: 139px">
+            <section class="gc-drmt">
+              <h3 class="h5">
+                <a
+                  href="#"
+                  class="wrong-way"
+                  data-i18n="about-auctions-frameworks-link3"
+                ></a>
+              </h3>
+              <p data-i18n="about-auctions-frameworks-link3-description"></p>
+            </section> -->
+        <!-- </div>
+          <div class="col-md-6" style="vertical-align: top; min-height: 139px">
+            <section class="gc-drmt">
+              <h3 class="h5">
+                <a
+                  href="#"
+                  class="wrong-way"
+                  data-i18n="about-auctions-frameworks-link4"
+                >
+                </a>
+              </h3>
+              <p data-i18n="about-auctions-frameworks-link4-description"></p>
+            </section>
+          </div> -->
+      </section>
+
+      <!-- <section class="col-md-12">
+        <h2>Information on spectrum licences</h2>
+        <p>
+          Information on spectrum licences, such as current licensees and
+          conditions of licence.
+        </p>
+      </section> -->
+
+      <!-- End page content -->
+
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <!-- preFooter-en.html -->
+      </div>
+      <!-- Write closure template -->
+      <script>
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+          cdnEnv: "esdcprod",
+          dateModified: "2025-05-07",
+          showPostContent: false,
+          showFeedback: false,
+          showShare: false,
+        });
+      </script>
+    </main>
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <!-- transactFooter-en.html -->
+    </div>
+    <!-- Write closure template -->
+    <script>
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+        cdnEnv: "esdcprod",
+        showFooter: false,
+        showFeatures: false,
+        termsLink: [
+          {
+            newWindow: true,
+          },
+        ],
+        privacyLink: [
+          {
+            newWindow: true,
+          },
+        ],
+        contextualFooter: {
+          title: "Spectrum and Telecommunications Sector",
+          links: [
+            {
+              text: "Contact us",
+              href: "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/radiocom-information-circulars-ric/ric-66-addresses-and-telephone-numbers-district-offices",
+              newWindow: true,
+            },
+          ],
+        },
+      });
+    </script>
+    <!-- Write closure template -->
+    <script>
+      document.write(
+        wet.builder.refFooter({
+          cdnEnv: "esdcprod",
+        })
+      );
+    </script>
+    <script src="scripts/alert-wrong-way.js"></script>
+    <script src="scripts/i18n.js"></script>
+    <script>
+      window.addEventListener("load", (event) => {
+        add_alert();
+      });
+    </script>
+    <script>
+      if (new URLSearchParams(window.location.search).get("lang") === "fr") {
+        document.getElementById("about-auctions-image").alt =
+          "Ondes spectrales se propageant au-dessus d'un maillet en bois sur une table, avec une enchère de spectre active en arrière-plan.";
+      } else {
+        document.getElementById("about-auctions-image").alt =
+          "Spectrum waves running over a wooden gavel on a table with an active spectrum auction in the background.";
+      }
+    </script>
+  </body>
+</html>
