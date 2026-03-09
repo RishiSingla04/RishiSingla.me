@@ -10,7 +10,7 @@ function add_alert() {
   for (let i = 0; i < Math.min(3, breadcrumbItems.length); i++) {
     breadcrumbItems[i].classList.add("wrong-way");
   }
-  fetch("/SAWI/scrape/text.json")
+  fetch("../SAWI/scrape/text.json")
     .then((res) => res.json())
     .then((translations) => {
       const strings = translations[lang_alert];

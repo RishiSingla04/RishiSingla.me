@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("/SAWI/scrape/filtered_output.json")
+  fetch("../SAWI/scrape/filtered_output.json")
     .then((res) => {
       if (!res.ok) throw new Error("Failed to fetch filtered_output.json");
       return res.json();
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
         dd.innerHTML = "<a href=#>" + name + "</a>";
         dd.addEventListener("click", function (e) {
           e.preventDefault(); // Prevent default link navigation/scroll
-          fetch("/SAWI/scrape/text.json")
+          fetch("../SAWI/scrape/text.json")
             .then((res) => res.json())
             .then((translations) => {
               alert(translations[whats_new_lang]["alert"]); // Show the alert

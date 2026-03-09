@@ -87,7 +87,7 @@
     }
 
     // Load translations and apply
-    fetch("/SAWI/scrape/text.json")
+    fetch("../SAWI/scrape/text.json")
       .then((res) => res.json())
       .then((translations) => {
         const strings = translations[lang];

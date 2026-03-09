@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("/SAWI/scrape/filtered_output.json")
+  fetch("../SAWI/scrape/filtered_output.json")
     .then((res) => {
       if (!res.ok) throw new Error("Failed to fetch filtered_output.json");
       return res.json();

@@ -104,11 +104,11 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error(err);
       });
   }
-  loadCheckboxes("/SAWI/scrape/auctions.json", "auction-checkboxes", "auction");
+  loadCheckboxes("../SAWI/scrape/auctions.json", "auction-checkboxes", "auction");
   // loadCheckboxes(
   //   "/SAWI/scrape/residual_auctions.json",
   //   "residual-auction-checkboxes",
   //   "residual_auction"
   // );
-  loadCheckboxes("/SAWI/scrape/types.json", "type-checkboxes", "doc_type");
+  loadCheckboxes("../SAWI/scrape/types.json", "type-checkboxes", "doc_type");
 });
