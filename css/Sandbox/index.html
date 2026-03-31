@@ -1,24 +1,141 @@
-<form id="myForm">
-  <input type="text" id="name" placeholder="Name" required>
-  <input type="email" id="email" placeholder="Email" required>
-  <button type="submit">Download CSV</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Device Form</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    input, button {
+      margin: 5px 0;
+      padding: 8px;
+      width: 100%;
+    }
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    button {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
 
-<script>
-document.getElementById("myForm").addEventListener("submit", function(e) {
-  e.preventDefault();
+  <h2>User Info</h2>
+  <input type="text" id="userName" placeholder="Enter your name">
 
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
+  <h2>Add Device</h2>
+  <input type="text" id="deviceName" placeholder="Device Name">
+  <input type="text" id="deviceType" placeholder="Device Type">
 
-  const csv = "Name,Email\n" + `${name},${email}`;
+  <button onclick="addDevice()">➕ Add Device</button>
 
-  const blob = new Blob([csv], { type: "text/csv" });
-  const url = window.URL.createObjectURL(blob);
+  <h3>Devices Added</h3>
+  <table id="deviceTable">
+    <thead>
+      <tr>
+        <th>Device Name</th>
+        <th>Device Type</th>
+        <th>Remove</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
 
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "data.csv";
-  a.click();
-});
-</script>
+  <button onclick="downloadCSV()">⬇️ Download CSV</button>
+  <button onclick="clearData()">🗑️ Clear All</button>
+
+  <script>
+    let devices = JSON.parse(localStorage.getItem("devices")) || [];
+
+    function renderTable() {
+      const table = document.querySelector("#deviceTable tbody");
+      table.innerHTML = "";
+
+      devices.forEach((device, index) => {
+        const row = `
+          <tr>
+            <td>${device.name}</td>
+            <td>${device.type}</td>
+            <td><button onclick="removeDevice(${index})">❌</button></td>
+          </tr>
+        `;
+        table.innerHTML += row;
+      });
+    }
+
+    function addDevice() {
+      const name = document.getElementById("deviceName").value;
+      const type = document.getElementById("deviceType").value;
+
+      if (!name || !type) {
+        alert("Please fill all fields");
+        return;
+      }
+
+      devices.push({ name, type });
+      localStorage.setItem("devices", JSON.stringify(devices));
+
+      document.getElementById("deviceName").value = "";
+      document.getElementById("deviceType").value = "";
+
+      renderTable();
+    }
+
+    function removeDevice(index) {
+      devices.splice(index, 1);
+      localStorage.setItem("devices", JSON.stringify(devices));
+      renderTable();
+    }
+
+    function downloadCSV() {
+      const user = document.getElementById("userName").value;
+
+      if (!user) {
+        alert("Enter your name first");
+        return;
+      }
+
+      if (devices.length === 0) {
+        alert("Add at least one device");
+        return;
+      }
+
+      let csv = "User,Device Name,Device Type\n";
+
+      devices.forEach(d => {
+        csv += `${user},${d.name},${d.type}\n`;
+      });
+
+      const blob = new Blob([csv], { type: "text/csv" });
+      const url = URL.createObjectURL(blob);
+
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "devices.csv";
+      a.click();
+    }
+
+    function clearData() {
+      localStorage.removeItem("devices");
+      devices = [];
+      renderTable();
+    }
+
+    // Initial render
+    renderTable();
+  </script>
+
+</body>
+</html>
