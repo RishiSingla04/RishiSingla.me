@@ -4832,3 +4832,233 @@ button.btn--pill {
     margin-right: 1.4rem;
   }
 }
+
+/* ===================================================================
+ * # SAWI Case Study Page
+ *
+ * ------------------------------------------------------------------- */
+.case-study-page .s-hero__content-about h1 {
+  max-width: 16ch;
+}
+
+.case-study-page .s-hero__content-about h3 {
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-study-page .s-about h2,
+.case-study-page .s-about h3,
+.case-study-page .s-about h4,
+.case-study-page .s-about h5 {
+  color: #ffffff;
+}
+
+.case-study-page .s-about__content p,
+.case-study-page .s-about__content li {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.case-study-page .s-about a:not(.btn) {
+  color: #ffffff;
+}
+
+.case-study-page .s-about a:not(.btn):hover,
+.case-study-page .s-about a:not(.btn):focus {
+  color: var(--color-1);
+}
+
+/* Resume section sits on white background, so use dark text. */
+.case-study-page .s-resume h2,
+.case-study-page .s-resume h3,
+.case-study-page .s-resume h4,
+.case-study-page .s-resume h5,
+.case-study-page .s-resume .section-header-allcaps,
+.case-study-page .s-resume .resume-block__header .h3 {
+  color: var(--color-text);
+}
+
+.case-study-page .s-resume__section p,
+.case-study-page .s-resume__section li,
+.case-study-page .s-resume .resume-block__header-meta span {
+  color: var(--color-text);
+}
+
+.case-study-page .s-resume a {
+  color: var(--color-1);
+}
+
+.case-study-page .s-resume a:hover,
+.case-study-page .s-resume a:focus {
+  color: var(--color-text);
+}
+
+.case-overview-list {
+  list-style: none;
+  margin: 0 0 var(--vspace-0_5) 0;
+  padding: 0;
+}
+
+.case-overview-list li {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 1.2rem 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.case-overview-list li span {
+  display: inline-block;
+  color: #ffffff;
+  margin-right: 0.6rem;
+}
+
+.case-overview-text {
+  margin-top: var(--vspace-0_5);
+}
+
+.case-hmw {
+  border-left: 3px solid var(--color-1);
+  padding-left: 1.6rem;
+  margin-top: var(--vspace-0_5);
+  font-style: italic;
+}
+
+.case-meta-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.case-meta-list li {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 1.2rem 1.4rem;
+}
+
+.case-meta-list li span {
+  display: block;
+  color: #ffffff;
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.case-meta-list li p {
+  margin: 0;
+}
+
+.case-snapshot {
+  margin-top: var(--vspace-1);
+}
+
+.case-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.case-card h3 {
+  margin-top: 0;
+  margin-bottom: var(--vspace-0_5);
+}
+
+.case-cta {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.case-cta__title {
+  color: #ffffff;
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 0.6rem;
+  font-weight: 600;
+}
+
+.case-cta__desc {
+  margin: 0 0 1.6rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.case-cta .btn {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: normal;
+}
+
+.case-prototype-band {
+  padding-top: var(--vspace-0_5);
+  padding-bottom: calc(4 * var(--space));
+  margin-top: calc(-1 * var(--vspace-2_5));
+}
+
+.case-cta--standalone {
+  max-width: 52rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pain-points-list {
+  margin: 0.8rem 0 0;
+}
+
+.pain-points-list li {
+  margin-bottom: 0.8rem;
+}
+
+.tool-chips {
+  list-style: none;
+  margin: 1rem 0 2rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.tool-chips li {
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  font-size: var(--text-xs);
+}
+
+.case-toolkit-card {
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1.6rem;
+  margin-top: 0.8rem;
+}
+
+.case-toolkit-card h5 {
+  margin: 0 0 0.6rem;
+  color: var(--color-text);
+  font-size: var(--text-sm);
+}
+
+.case-toolkit-card p {
+  margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .case-meta-list {
+    grid-template-columns: 1fr;
+  }
+}

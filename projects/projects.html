@@ -35,7 +35,7 @@
      crossorigin="anonymous"></script>
 </head>
 
-<body id="top" class="ss-preload">
+<body id="top" class="ss-preload case-study-page">
 
 
     <!-- preloader
@@ -80,9 +80,7 @@
                     <h1>Spectrum Auctions Website Improvement (SAWI) Project</h1>
 
                     <h3>
-                        
-                        
-                        <a class="smoothscroll" href="#about">Start scrolling and learn more about the design process.</a>
+                        End-to-end UX/UI case study focused on research, accessibility, prototyping, and usability validation.
                     </h3>
 
                 </div> <!-- end s-hero__content-about -->
@@ -93,7 +91,7 @@
         <div class="s-hero__scroll">
             <a href="#about" class="s-hero__scroll-link smoothscroll">
                 <span class="scroll-arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z"></path></svg>
                 </span>
                 <span class="scroll-text">Scroll Down</span>
             </a>
@@ -112,48 +110,57 @@
                 <gcds-signature></gcds-signature>
             </div>
             <div class="column large-9 tab-12 s-about__content">
-                <h3>Background</h3>
-                <p>
-                    The Spectrum Auctions Website Improvement (SAWI) project was a UX/UI design initiative aimed 
-                    at enhancing the user experience of the Innovation, Science 
-                    and Economic Development's (ISED) spectrum auction website. The project involved 
-                    conducting user research, designing prototypes, and usability testing to create an improved 
-                    interface that meets the needs of both public users and internal stakeholders. The goal was to ensure 
-                    that the website is accessible, user-friendly, and compliant with WCAG 2.2 AA standards, ultimately 
-                    facilitating a smoother experience for users navigating the spectrum auctions process.
-            </br>
-                    The project was a collaborative effort that involved working closely with stakeholders to
-                    understand their needs and pain points, as well as conducting user research to gather insights 
-                    on how to improve the website's design and functionality. The end result was a redesigned website that
-                    not only improved the user experience but also ensured compliance with accessibility standards, making it more inclusive for all users. 
-
+                <h3>Project Overview</h3>
+                <ul class="case-overview-list">
+                    <li><span>Client/Context:</span> Spectrum and Telecommunications Sector (Government of Canada).</li>
+                    <li><span>Challenge:</span> The existing spectrum auction journey was difficult to navigate for public applicants and internal teams, with dense information and inconsistent task flow.</li>
+                    <li><span>Goal:</span> Redesign the experience to improve clarity, reduce user friction, and meet WCAG 2.2 AA accessibility requirements.</li>
+                </ul>
+                <p class="case-overview-text">
+                    The project was delivered through a structured UX process that combined stakeholder collaboration,
+                    evidence-based design decisions, and iterative testing. The final direction improved wayfinding,
+                    content comprehension, and task completion confidence across the auction workflow.
+                </p>
+                <p class="case-hmw">
+                    How might we design a spectrum auction experience that helps users find critical information faster,
+                    complete tasks with fewer errors, and feel confident at every step of the process?
                 </p>
 
                 <hr>
 
-                <div class="row s-about__content-bottom">
-            <div class="column w-1000-stack">
-              <h3>Contact Details</h3>
-
-              <p>
-                Rishi Singla <br />
-                <a href="tel:+16476250531">+1 (647) 625-0531</a> <br />
-                <a href="mailto:Rs.Rishi.Singla@gmail.com"
-                  >Rs.Rishi.Singla@gmail.com</a
-                >
-              </p>
-            </div>
-            <div class="column w-1000-stack">
-              <a href="../SAWI/auction-landing-page.html" class="btn btn--download">
-                View working prototype
-              </a>
-            </div>
-          </div>
+                <div class="row s-about__content-bottom case-snapshot">
+                    <div class="column large-12 tab-12">
+                        <div class="case-card">
+                            <h3>Case Study Snapshot</h3>
+                            <ul class="case-meta-list">
+                                <li><span>Role</span><p>Student Designer</p></li>
+                                <li><span>Timeline</span><p>Jan - Sept 2025</p></li>
+                                <li><span>Team</span><p>6 people</p></li>
+                                <li><span>Outputs</span><p>50+ Figma screens, 4 HTML prototypes, usability findings report</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 
             </div>
         </div> <!-- end row -->
 
     </section> <!-- end s-about -->
+
+
+    <section id="prototype" class="s-about target-section case-prototype-band" aria-label="Interactive prototype">
+        <div class="row">
+            <div class="column large-12">
+                <div class="case-cta case-cta--standalone">
+                    <h4 class="case-cta__title">Interactive prototype</h4>
+                    <p class="case-cta__desc">Explore the HTML prototype used for usability testing and stakeholder reviews.</p>
+                    <a href="../SAWI/auction-landing-page.html" class="btn btn--download h-full-width">
+                        View interactive prototype
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- resume
@@ -179,7 +186,7 @@
                     </div>
 
                     <p>
-                        I started by interviewing internal stakeholders and reviewing 30+ legacy documents to map current
+                        We started by interviewing internal stakeholders and reviewing 30+ legacy documents to map current
                         user journeys and identify friction points in the spectrum auction experience. This phase clarified
                         key pain points for both public users and internal teams, and defined the project goals, constraints,
                         and success metrics.
@@ -242,38 +249,61 @@
                         I co-led usability testing with 20 participants and translated findings into targeted improvements
                         for navigation, readability, and task completion. Accessibility checks were built into every round,
                         including keyboard flow, screen reader behavior, and contrast verification, to ensure final outputs
-                        aligned with <strong>WCAG 2.2 AA</strong> standards.
+                        aligned with WCAG 2.2 AA standards.
                     </p>
 
                 </div> <!-- end resume-block -->
-            </div>
-        </div> <!-- s-resume__section -->
-
-
-        <div class="row s-resume__section">
-            <div class="column large-3 tab-12">
-                <h3 class="section-header-allcaps">Education</h3>
-            </div>
-            <div class="column large-9 tab-12">
                 <div class="resume-block">
 
                     <div class="resume-block__header">
-                        <h4 class="h3">University of Ottawa</h4>
+                        <h4 class="h3">5. Outcomes and Impact</h4>
                         <p class="resume-block__header-meta">
-                            <span>Honours B.S.c. with Major in Computer Science</span> 
+                            <span>Business and user value</span> 
                             <span class="resume-block__header-date">
-                                Expected - April 2026
+                                Pilot validation phase
                             </span>
                         </p>
                     </div>
 
                     <p>
-                    Currently attending The University of Ottawa for an Honours in Bachelors
-                        of Science with a Major in Computer Science. 
-                        Enrolled in Computer Science, Computer Engineering, Software Engineering and Entrepreneurial courses.
-                        Attained a 4.0 GPA in Introduction to Computing, Software Engineering and Programming Paradigms.
-
+                        Proposed direction from testing showed promising early indicators: users completed primary
+                        navigation tasks faster, reported lower confusion around eligibility steps, and gave stronger
+                        confidence ratings for understanding next actions. Internal stakeholders also reported that the
+                        revised structure better supported policy communication and reduced repetitive clarification requests.
                     </p>
+
+                </div> <!-- end resume-block -->
+            </div>
+        </div> <!-- s-resume__section -->
+
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Problem Discovery</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Key Pain Points Identified</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Synthesis from interviews and journey mapping</span> 
+                            <span class="resume-block__header-date">
+                                Discovery phase
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        The discovery phase surfaced five consistent pain points:
+                    </p>
+                    <ul class="pain-points-list">
+                        <li>Important information was buried in long content blocks and hard to scan quickly.</li>
+                        <li>Users needed too many steps to move between auction stages and supporting documents.</li>
+                        <li>Terminology was inconsistent across pages, creating uncertainty and avoidable mistakes.</li>
+                        <li>Internal teams spent significant time answering recurring process questions.</li>
+                        <li>Accessibility gaps made navigation harder for keyboard and screen-reader users.</li>
+                    </ul>
 
                 </div> <!-- end resume-block -->
 
@@ -283,39 +313,68 @@
 
         <div class="row s-resume__section">
             <div class="column large-3 tab-12">
-                <h3 class="section-header-allcaps">Skills</h3>
+                <h3 class="section-header-allcaps">Methods and Tools</h3>
             </div>
             <div class="column large-9 tab-12">
                 <div class="resume-block">
 
+                    <div class="resume-block__header">
+                        <h4 class="h3">Research and Synthesis</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Understanding user and business needs</span>
+                        </p>
+                    </div>
                     <p>
-                        I am a team player with a strong background in programming and graphics design.
-                        I am proficient with Python and Java with experience in programming with HTML/CSS/JS
-                        and designing with Figma and Tinkercad.
+                        Stakeholder interviews, legacy document review, and user journey mapping were used to identify friction
+                        points, align priorities, and define measurable UX goals before design work started.
                     </p>
-
-                    <ul class="skill-bars-fat">
-                        <li>
-                        <div class="progress percent80"></div>
-                        <strong>Java</strong>
-                        </li>
-                        <li>
-                        <div class="progress percent70"></div>
-                        <strong>Python</strong>
-                        </li>
-                        <li>
-                        <div class="progress percent70"></div>
-                        <strong>HTML/CSS/JS</strong>
-                        </li>
-                        <li>
-                        <div class="progress percent55"></div>
-                        <strong>Figma</strong>
-                        </li>
-                        <li>
-                        <div class="progress percent55"></div>
-                        <strong>Tinkercad</strong>
-                        </li>
+                    <ul class="tool-chips">
+                        <li>Stakeholder Interviews</li>
+                        <li>Journey Mapping</li>
+                        <li>Miro Workshops</li>
+                        <li>Requirements Synthesis</li>
                     </ul>
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Design and Validation</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Testing ideas before handoff</span>
+                        </p>
+                    </div>
+                    <p>
+                        I used Figma for wireframes and high-fidelity screens, built HTML/CSS prototypes for realistic interaction
+                        checks, and ran usability/accessibility validation (including NVDA) to ensure decisions were evidence-based.
+                    </p>
+                    <ul class="tool-chips">
+                        <li>Figma Prototyping</li>
+                        <li>HTML/CSS Test Builds</li>
+                        <li>Userlytics Sessions</li>
+                        <li>NVDA Accessibility Checks</li>
+                    </ul>
+
+                    <div class="case-toolkit-card">
+                        <h5>Core Toolkit</h5>
+                        <p>
+                            Figma, GitHub, Userlytics, Miro, HTML/CSS prototypes, NVDA, WCAG 2.2 AA checklists,
+                            and collaborative feedback sessions with stakeholders.
+                        </p>
+                    </div>
+
+                </div> <!-- end resume-block -->
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Reflection</h4>
+                        <p class="resume-block__header-meta">
+                            <span>What I learned and what I would improve</span>
+                        </p>
+                    </div>
+                    <p>
+                        This project strengthened my ability to design in policy-heavy environments where clarity and trust
+                        are as important as visual design quality. If I were continuing this work, I would expand mobile-first
+                        testing earlier, run another accessibility audit with assistive technology users, and add a metrics
+                        dashboard to monitor task completion and drop-off trends after launch.
+                    </p>
 
                 </div> <!-- end resume-block -->
 
@@ -331,7 +390,7 @@
 
         <div class="row s-portfolio__header">
             <div class="column large-12">
-                <h3>A Few Of My Projects</h3>
+                <h3>Additional Work Samples</h3>
             </div>
         </div>
 
@@ -375,7 +434,7 @@
                          srcset="Images/Figma-Projects.jpeg 1x, 
                                  Images/Figma-Projects.jpeg 2x" alt="">
                 </a>
-            
+            </div> <!-- end folio-item -->
 
         </div> <!-- end folio-list -->
             
@@ -385,7 +444,7 @@
                          srcset="../Images/3D-Design.jpeg 1x, 
                                  ../Images/3D-Design.jpeg 2x" alt="">
                 </a>
-            
+            </div> <!-- end folio-item -->
 
         </div> <!-- end folio-list -->
 
